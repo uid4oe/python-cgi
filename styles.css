@@ -1,0 +1,57 @@
+.item1 { grid-area: header; }
+.item2 { grid-area: main; }
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  border: solid;
+}
+
+.item1 {
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.item2 {
+  font-size: 20px;
+  padding 0px;
+}
+
+.main-container{
+    padding: 10px 20px 10px 20px;
+}
+
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 40%;
+}
+
